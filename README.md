@@ -11,7 +11,7 @@ There are several ways of editing your application.
 **Use Lovable**
 
 Simply visit the [Lovable Project](https://lovable.dev/projects/9aa0d472-ebdd-4b10-a006-b7d134b1966a) and start prompting.
-for bolt prompt : [Bolt](https://feertfitzergald-dine-fnhw.bolt.host)
+for bolt prompt : [Bolt](https://dineshbarri-dineshba-jcts.bolt.host)
 Changes made via Lovable will be committed automatically to this repo.
 
 **Use your preferred IDE**
