@@ -386,7 +386,11 @@ Contributions, issues, and feature requests are welcome!
 
 ## 📝 License
 
-This project is **MIT** licensed. See the [LICENSE](LICENSE) file for details.
+
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
@@ -399,28 +403,14 @@ This project is **MIT** licensed. See the [LICENSE](LICENSE) file for details.
 - **Email Service** - [EmailJS](https://www.emailjs.com/)
 - **Hosting** - [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/)
 
----
 
-## ⭐ Show Your Support
-
-If you found this portfolio helpful or inspiring, please consider:
-- ⭐ Starring this repository
-- 🐛 Reporting bugs or suggesting features
-- 📢 Sharing with others who might find it useful
 
 ---
 
-<div align="center">
+## 🤝 Contributing
 
-### 💻 Built with passion by [Dinesh Barri](https://github.com/dineshbarri)
-
-**Data Explorer 🚀 | ML Enthusiast | AI Agent Developer | Competitive Programmer | Pro Chess Player**
-
-[![GitHub followers](https://img.shields.io/github/followers/dineshbarri?style=social)](https://github.com/dineshbarri)
-[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/dinesh-barri/)
+Contributions, issues, and feature requests are welcome! Feel free to check issues page if you want to contribute.
 
 ---
 
-*Last Updated: December 2025*
-
-</div>
+### ⭐ If you like this project, don't forget to give it a star!
