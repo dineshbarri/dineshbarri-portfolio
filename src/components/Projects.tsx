@@ -4,13 +4,13 @@ import { useRef, useState } from 'react';
 import { ExternalLink, Github, ChevronRight } from 'lucide-react';
 
 const categories = [
-  'All Projects',
+  '🎯 All Projects',
   '🌐 Web Development',
-  'AI & Automation',
+  '🤖 AI & Automation',
   '📊 PowerBI',
-  '📊 Tableau',
-  'ML & Data Science',
-  'SQL',
+  '📈 Tableau',
+  '🧠 ML & Data Science',
+  '💾 SQL',
 ];
 
 const projects = [
@@ -27,7 +27,7 @@ const projects = [
     title: 'Ireland Hotel Pricing & Ratings Analysis',
     description: 'End-to-end analytics pipeline transforming raw hotel listings into actionable insights, revealing the relationship between price, ratings, and location across Ireland.',
     tags: ['Python', 'SQL', 'Data Engineering', 'Netlify'],
-    categories: ['📊 PowerBI', 'ML & Data Science'],
+    categories: ['📊 PowerBI', '🧠 ML & Data Science', '💾 SQL'],
     github: 'https://github.com/dineshbarri/ireland-hotel-pricing-ratings-analysis',
     live: 'https://www.novypro.com/project/ireland-hotel-intelligence-dashboard',
     image: '/project-hotel.png',
@@ -36,7 +36,7 @@ const projects = [
     title: 'AI Video Factory - Veo3 Automation',
     description: 'Automated video creation system powered by Google Veo3 and n8n — generate, store, and publish AI-generated videos with captions, Drive uploads, and YouTube automation.',
     tags: ['AI', 'Automation', 'Google Gemini', 'n8n', 'YouTube'],
-    categories: ['AI & Automation'],
+    categories: ['🤖 AI & Automation'],
     github: 'https://github.com/dineshbarri/AI-Video-Factory-Veo3-Automation-Pipeline',
     image: '/project-ai-video.png',
   },
@@ -44,7 +44,7 @@ const projects = [
     title: 'Plemdo AI Enterprise Analytics',
     description: 'From WhatsApp message to boardroom report in 60 seconds. AI-powered analytics that transforms conversations into consultant-grade intelligence.',
     tags: ['AI', 'WhatsApp API', 'n8n', 'Data Analysis'],
-    categories: ['AI & Automation'],
+    categories: ['🤖 AI & Automation'],
     github: 'https://github.com/dineshbarri/Plemdo-AI-Enterprise-Analytics',
     image: '/project-plemdo.png',
   },
@@ -52,7 +52,7 @@ const projects = [
     title: 'Neural Digit Recognizer',
     description: 'Interactive web app built with Flask and PyTorch that recognizes handwritten digits using a Convolutional Neural Network (CNN). Includes Docker deployment.',
     tags: ['PyTorch', 'Flask', 'Deep Learning', 'Docker', 'CNN'],
-    categories: ['🌐 Web Development', 'ML & Data Science'],
+    categories: ['🌐 Web Development', '🧠 ML & Data Science'],
     github: 'https://github.com/dineshbarri/Neural_Digit_Recognizer',
     live: 'https://neural-digit-recognizer-t47d.onrender.com/',
     image: '/project-neural.png',
@@ -61,7 +61,7 @@ const projects = [
     title: 'Harry Potter Data Analytics',
     description: 'Interactive Tableau dashboard uncovering fascinating insights from Harry Potter book sales, awards, and release trends across the wizarding universe.',
     tags: ['Tableau', 'Data Visualization', 'EDA'],
-    categories: ['📊 Tableau'],
+    categories: ['📈 Tableau'],
     github: 'https://github.com/dineshbarri/Wizarding-Analytics-Harry-Potter-Through-Data-',
     live: 'https://public.tableau.com/app/profile/dinesh.barri8170/viz/TheWizardingWorldUnveiledAHarryPotterDataJourney/Dashboard1',
     image: '/project-hp.png',
@@ -70,7 +70,7 @@ const projects = [
     title: 'Titanic Survivors Dashboard',
     description: 'Visualization uncovering survival patterns based on gender, age, class, and fare. Interactive Tableau dashboard with comprehensive analysis.',
     tags: ['Tableau', 'Data Visualization', 'Analytics'],
-    categories: ['📊 Tableau'],
+    categories: ['📈 Tableau'],
     github: 'https://github.com/dineshbarri/Titanic-Survivors-Analysis-Dashboard',
     live: 'https://public.tableau.com/app/profile/dinesh.barri8170/viz/TitanicSurvivorsAnalysisDashboard/TitanicPassengersOverview',
     image: '/project-titanic.png',
@@ -79,7 +79,7 @@ const projects = [
     title: 'Netflix SQL Analysis',
     description: 'End-to-end SQL analytics project powered by MySQL — uncovering global streaming trends, ratings, and regional insights from Netflix data.',
     tags: ['MySQL', 'SQL', 'Data Analysis'],
-    categories: ['SQL'],
+    categories: ['💾 SQL'],
     github: 'https://github.com/dineshbarri/Netflix_Sql_Analysis',
     image: '/project-netflix.png',
   },
@@ -92,16 +92,34 @@ const projects = [
     live: 'https://dineshbarri-ireland-covid19-analysis.netlify.app/',
     image: '/project-covid.png',
   },
+  {
+    title: 'Retail Pulse Dashboard',
+    description: 'Comprehensive analytics platform empowering business leaders to explore sales, profit, and order trends across categories, time, and regions. Built with Tableau for actionable insights.',
+    tags: ['Tableau', 'Data Visualization', 'Business Intelligence', 'Analytics'],
+    categories: ['📈 Tableau'],
+    github: 'https://github.com/dineshbarri/Retail_Pulse-Dashboard',
+    live: 'https://public.tableau.com/app/profile/dinesh.barri8170/viz/RetailPulseDashboard/RetailAnalysisDashboarding',
+    image: '/project-retail-pulse.png',
+  },
+  {
+    title: 'Ireland Hotel Analytics Website',
+    description: 'Interactive analytics dashboard analyzing Irish hospitality market with real-time data visualization. Features interactive maps, price vs quality analysis, advanced filtering, and mobile-responsive design showcasing modern web development excellence.',
+    tags: ['JavaScript', 'HTML', 'CSS', 'ECharts', 'Leaflet', 'Data Visualization'],
+    categories: ['🌐 Web Development'],
+    github: 'https://github.com/dineshbarri/Ireland-Hotel-Analytics-Website',
+    live: 'https://ireland-hotels-dineshbarri.netlify.app/',
+    image: '/project-ireland-hotel-web.png',
+  },
 ];
 
 export const Projects = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
   const [showAll, setShowAll] = useState(false);
-  const [activeCategory, setActiveCategory] = useState('All Projects');
+  const [activeCategory, setActiveCategory] = useState('🎯 All Projects');
 
   const filteredProjects = projects.filter(project =>
-    activeCategory === 'All Projects' || project.categories.includes(activeCategory)
+    activeCategory === '🎯 All Projects' || project.categories.includes(activeCategory)
   );
 
   const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 6);

@@ -69,7 +69,7 @@ export const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <h3 className="font-display text-xl font-semibold mb-6">Get in Touch</h3>
-            
+
             <div className="space-y-6">
               <a
                 href="mailto:dineshbarri1997@gmail.com"
@@ -134,13 +134,13 @@ export const Contact = () => {
             <form onSubmit={handleSubmit} className="glass-card p-6 sm:p-8">
               <div className="space-y-5">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2">
+                  <label htmlFor="from_name" className="block text-sm font-medium mb-2">
                     Name
                   </label>
                   <input
                     type="text"
-                    id="name"
-                    name="name"
+                    id="from_name"
+                    name="from_name"
                     required
                     className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
                     placeholder="Your name"
@@ -148,13 +148,13 @@ export const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2">
+                  <label htmlFor="from_email" className="block text-sm font-medium mb-2">
                     Email
                   </label>
                   <input
                     type="email"
-                    id="email"
-                    name="email"
+                    id="from_email"
+                    name="from_email"
                     required
                     className="w-full px-4 py-3 rounded-lg bg-secondary/50 border border-border focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary transition-colors"
                     placeholder="your@email.com"

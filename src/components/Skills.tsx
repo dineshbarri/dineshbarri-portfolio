@@ -5,7 +5,7 @@ import { useRef } from 'react';
 const skillCategories = [
   {
     title: 'Programming & Analytics',
-    skills: ['Python', 'R', 'SQL', 'HTML', 'CSS', 'Pandas', 'NumPy', 'Scikit-learn', 'SciPy', 'Statsmodels', 'BeautifulSoup', 'Selenium'],
+    skills: ['Python', 'Java', 'C++', 'C', 'JavaScript', 'TypeScript', 'R', 'SQL', 'Pandas', 'NumPy', 'Scikit-learn', 'SciPy', 'Statsmodels'],
   },
   {
     title: 'AI Agents & Intelligent Automation',
@@ -21,7 +21,7 @@ const skillCategories = [
   },
   {
     title: 'Databases & Cloud',
-    skills: ['MySQL', 'PostgreSQL', 'SQL Server', 'MS Access', 'AWS S3', 'AWS Lambda', 'AWS EC2', 'ETL Pipelines'],
+    skills: ['MySQL', 'PostgreSQL', 'SQL Server', 'MongoDB', 'AWS S3', 'AWS EC2', 'Microsoft Azure', 'Google Cloud'],
   },
   {
     title: 'Tools & Platforms',
@@ -50,7 +50,7 @@ export const Skills = () => {
             Skills & <span className="gradient-text">Expertise</span>
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A comprehensive toolkit for data analysis, machine learning, and software development
+            Technologies I've worked with in real-world projects and professional environments
           </p>
         </motion.div>
 

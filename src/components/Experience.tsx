@@ -8,7 +8,7 @@ const experiences = [
     title: 'Data Analyst',
     company: 'Cognizant',
     image: '/cognizant.png',
-    period: 'Jun 2019 – Apr 2024',
+    period: 'Jun 2019 - Jul 2023',
     location: 'Hyderabad, India · On-site',
     description:
       'Delivered analytics solutions and automated reporting systems for Google Maps operations, driving real-time insights and operational efficiency across large-scale processes. Specialized in scalable dashboards, ETL automation, SQL analytics, and production reporting pipelines.',
@@ -138,7 +138,7 @@ export const Experience = () => {
                       <div className="flex items-start gap-4 md:gap-6 mb-6">
                         {/* Logo Container */}
                         <div className="shrink-0">
-                          <div className="w-28 h-20 md:w-32 md:h-24 rounded-xl bg-transparent flex items-center justify-center">
+                          <div className="w-20 h-16 md:w-24 md:h-18 rounded-xl bg-transparent flex items-center justify-center">
                             {exp.image ? (
                               <img
                                 src={exp.image}

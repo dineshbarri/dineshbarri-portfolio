@@ -9,72 +9,93 @@ interface Certification {
   authority: string;
   license: string;
   description: string[];
-  icon: string;
+  logo: string;
 }
 
-const certificationDescriptions: Record<string, { description: string[], icon: string }> = {
+const certificationDescriptions: Record<string, { description: string[], logo: string }> = {
   'Google Advanced Data Analytics Professional Certificate': {
     description: [
       'Advanced statistical analysis and regression modeling',
       'Machine learning fundamentals and model building with Python'
     ],
-    icon: 'google'
+    logo: '/logos/google.png'
   },
   'Google Data Analytics Professional Certificate': {
     description: [
       'Data cleaning, transformation, and visualization techniques',
       'SQL queries and spreadsheet analysis for business insights'
     ],
-    icon: 'google'
+    logo: '/logos/google.png'
   },
   'Microsoft Power BI Data Analyst Professional Certificate': {
     description: [
       'Creating interactive dashboards and reports',
       'DAX formulas and data modeling for business analytics'
     ],
-    icon: 'microsoft'
+    logo: '/logos/microsoft.png'
   },
   'TensorFlow Developer Certificate (DeepLearning.AI)': {
     description: [
       'Building and training neural networks with TensorFlow',
       'Computer vision and natural language processing applications'
     ],
-    icon: 'ai'
+    logo: '/logos/deeplearning.png'
   },
   'AWS Cloud Practitioner Essentials': {
     description: [
       'AWS cloud computing fundamentals and architecture',
       'Core AWS services for storage, compute, and database'
     ],
-    icon: 'aws'
+    logo: '/logos/aws.png'
   },
   'Prepare Data for ML APIs on Google Cloud': {
     description: [
       'Data preprocessing and feature engineering for ML',
       'Using Google Cloud AI APIs for predictions'
     ],
-    icon: 'google'
+    logo: '/logos/google-cloud.png'
+  },
+  'Introduction to Generative AI': {
+    description: [
+      'Fundamentals of generative AI and large language models',
+      'AWS AI services and generative AI applications'
+    ],
+    logo: '/logos/aws.png'
   },
   'Introduction to Relational Databases (RDBMS)': {
     description: [
       'Database design principles and normalization',
       'SQL fundamentals and relational database concepts'
     ],
-    icon: 'database'
+    logo: '/logos/ibm.png'
   },
   'Python for Data Science, AI & Development': {
     description: [
       'Python programming for data manipulation and analysis',
       'Libraries like Pandas, NumPy, and Matplotlib'
     ],
-    icon: 'python'
+    logo: '/logos/ibm.png'
   },
   'Gemini for Data Scientists and Analysts': {
     description: [
       'Leveraging Gemini AI for data analysis workflows',
       'AI-powered insights and automation techniques'
     ],
-    icon: 'google'
+    logo: '/logos/google-cloud.png'
+  },
+  'Looker Studio Essentials': {
+    description: [
+      'Building interactive dashboards and data visualizations',
+      'Connecting data sources and creating compelling reports'
+    ],
+    logo: '/logos/google-cloud.png'
+  },
+  'SQL (Advanced)': {
+    description: [
+      'Complex query optimization and performance tuning',
+      'Advanced joins, subqueries, and window functions'
+    ],
+    logo: '/logos/hackerrank.png'
   }
 };
 
@@ -85,9 +106,12 @@ const priorityOrder = [
   'TensorFlow Developer Certificate (DeepLearning.AI)',
   'AWS Cloud Practitioner Essentials',
   'Prepare Data for ML APIs on Google Cloud',
+  'Introduction to Generative AI',
   'Introduction to Relational Databases (RDBMS)',
   'Python for Data Science, AI & Development',
-  'Gemini for Data Scientists and Analysts'
+  'Gemini for Data Scientists and Analysts',
+  'Looker Studio Essentials',
+  'SQL (Advanced)'
 ];
 
 export const Certifications = ({ limit }: { limit?: number }) => {
@@ -134,7 +158,7 @@ export const Certifications = ({ limit }: { limit?: number }) => {
               authority,
               license,
               description: certificationDescriptions[name].description,
-              icon: certificationDescriptions[name].icon
+              logo: certificationDescriptions[name].logo
             });
           }
         });
@@ -153,22 +177,7 @@ export const Certifications = ({ limit }: { limit?: number }) => {
       .catch(error => console.error('Error loading certifications:', error));
   }, [limit]);
 
-  const getIconComponent = (icon: string) => {
-    const iconClasses = "w-6 h-6 text-primary";
-    switch (icon) {
-      case 'google':
-        return <span className="font-bold text-primary text-xl">G</span>;
-      case 'microsoft':
-        return <span className="font-bold text-primary text-xl">M</span>;
-      case 'aws':
-        return <span className="font-bold text-primary text-xl">AWS</span>;
-      case 'ai':
-      case 'python':
-      case 'database':
-      default:
-        return <Award className={iconClasses} />;
-    }
-  };
+
 
   return (
     <section id="certifications" className="py-24 relative" ref={ref}>
@@ -200,8 +209,16 @@ export const Certifications = ({ limit }: { limit?: number }) => {
               className="glass-card p-6 hover:border-primary/30 transition-all duration-300 group cursor-pointer hover:translate-y-[-4px] hover:shadow-lg"
             >
               <div className="flex items-start gap-4 mb-4">
-                <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                  {getIconComponent(cert.icon)}
+                <div className="w-16 h-16 rounded-xl bg-white flex items-center justify-center shrink-0 p-2 border border-border/20 group-hover:border-primary/30 transition-colors">
+                  <img
+                    src={cert.logo}
+                    alt={cert.authority}
+                    className="w-full h-full object-contain"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      e.currentTarget.parentElement!.innerHTML = `<span class="font-bold text-primary text-lg">${cert.authority.substring(0, 3).toUpperCase()}</span>`;
+                    }}
+                  />
                 </div>
                 <ExternalLink size={16} className="text-primary opacity-0 group-hover:opacity-100 transition-opacity ml-auto" />
               </div>
