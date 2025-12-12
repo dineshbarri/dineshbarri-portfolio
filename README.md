@@ -1,73 +1,426 @@
-# Welcome to your Lovable project
+<div align="center">
 
-## Project info
+# 🚀 Dinesh Barri - Portfolio Website
 
-**URL**: https://lovable.dev/projects/9aa0d472-ebdd-4b10-a006-b7d134b1966a
+### Data Analyst | Data Scientist | ML Enthusiast | Codeforces Master
 
-## How can I edit this code?
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=vercel)](https://dineshbarri.dev)
+[![GitHub](https://img.shields.io/badge/GitHub-dineshbarri-181717?style=for-the-badge&logo=github)](https://github.com/dineshbarri)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/dinesh-barri/)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-There are several ways of editing your application.
+<p align="center">
+  <img src="https://img.shields.io/badge/React-18.3.1-61DAFB?style=flat-square&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-5.8.3-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Vite-5.4.19-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite" />
+  <img src="https://img.shields.io/badge/TailwindCSS-3.4.17-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind" />
+  <img src="https://img.shields.io/badge/Framer_Motion-12.23.25-FF0055?style=flat-square&logo=framer&logoColor=white" alt="Framer Motion" />
+</p>
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/9aa0d472-ebdd-4b10-a006-b7d134b1966a) and start prompting.
-for bolt prompt : [Bolt](https://dineshbarri-dineshba-jcts.bolt.host)
-Changes made via Lovable will be committed automatically to this repo.
+**A modern, responsive, and visually stunning portfolio website showcasing my journey as a Data Professional**
 
-**Use your preferred IDE**
+[View Demo](https://dineshbarri.dev) · [Report Bug](https://github.com/dineshbarri/dineshbarri-portfolio/issues) · [Request Feature](https://github.com/dineshbarri/dineshbarri-portfolio/issues)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+</div>
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## ✨ Features
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+This portfolio website is designed to **WOW** visitors with its premium aesthetics and smooth user experience:
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### 🎨 **Premium Design**
+- **Dark Mode First** - Sleek, modern dark theme with glassmorphism effects
+- **Smooth Animations** - Powered by Framer Motion for fluid transitions and micro-interactions
+- **Responsive Design** - Flawless experience across all devices (mobile, tablet, desktop)
+- **Custom Gradients** - Eye-catching gradient text and background effects
 
-# Step 3: Install the necessary dependencies.
-npm i
+### 📱 **Interactive Sections**
+- **Hero Section** - Dynamic typewriter effect with role rotation
+- **About Me** - Comprehensive introduction with downloadable resume
+- **Experience** - Timeline-based work history with company logos and achievements
+- **Education** - Academic background with institution details
+- **Professional Certifications** - Showcase of credentials from Google, IBM, and more
+- **Skills** - Categorized technical skills with visual indicators
+- **Projects** - Portfolio of data science and analytics projects with live demos
+- **Contact Form** - Fully functional contact form powered by EmailJS
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 🛠️ **Technical Highlights**
+- ⚡ **Lightning Fast** - Built with Vite for optimal performance
+- 🎯 **Type Safe** - Full TypeScript implementation
+- 📧 **Email Integration** - EmailJS for seamless contact form functionality
+- 🎭 **Component Library** - Radix UI + shadcn/ui for accessible components
+- 🎨 **Styling** - Tailwind CSS with custom design tokens
+- 📊 **Form Validation** - React Hook Form with Zod schema validation
+
+---
+
+## 🖼️ Preview
+
+<div align="center">
+
+### 🌟 Hero Section
+*Dynamic typewriter effect with smooth animations*
+
+### 💼 Experience Timeline
+*Interactive work history with hover effects*
+
+### 📧 Contact Form
+*Fully functional with EmailJS integration*
+
+</div>
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+Before you begin, ensure you have the following installed:
+- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
+- **npm** or **bun** - Comes with Node.js
+
+### Installation
+
+Follow these steps to run the portfolio locally:
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/dineshbarri/dineshbarri-portfolio.git
+
+# 2️⃣ Navigate to the project directory
+cd dineshbarri-portfolio
+
+# 3️⃣ Install dependencies
+npm install
+# or if you prefer bun
+bun install
+
+# 4️⃣ Start the development server
 npm run dev
+# or
+bun run dev
 ```
 
-**Edit a file directly in GitHub**
+The application will open at **`http://localhost:5173`** 🎉
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📧 EmailJS Setup Guide
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+The contact form uses **EmailJS** to send emails directly from the browser without a backend server. Here's how to set it up:
 
-## What technologies are used for this project?
+### Step 1: Create an EmailJS Account
 
-This project is built with:
+1. Go to [EmailJS](https://www.emailjs.com/) and sign up for a free account
+2. Verify your email address
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Step 2: Set Up Email Service
 
-## How can I deploy this project?
+1. Navigate to **Email Services** in your EmailJS dashboard
+2. Click **Add New Service**
+3. Choose your email provider (Gmail, Outlook, etc.)
+4. Follow the authentication steps
+5. Copy your **Service ID** (e.g., `service_rus0kuj`)
 
-Simply open [Lovable](https://lovable.dev/projects/9aa0d472-ebdd-4b10-a006-b7d134b1966a) and click on Share -> Publish.
+### Step 3: Create Email Template
 
-## Can I connect a custom domain to my Lovable project?
+1. Go to **Email Templates** in your dashboard
+2. Click **Create New Template**
+3. Use the following template variables in your email body:
 
-Yes, you can!
+```
+From: {{from_name}}
+Email: {{from_email}}
+Subject: {{subject}}
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Message:
+{{message}}
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+4. Save and copy your **Template ID** (e.g., `template_tlvoipb`)
+
+### Step 4: Get Your Public Key
+
+1. Go to **Account** → **General**
+2. Copy your **Public Key** (e.g., `GucQZNTsN9ZVLCPg7`)
+
+### Step 5: Update the Code
+
+Open `src/components/Contact.tsx` and update the EmailJS credentials:
+
+```typescript
+const result = await emailjs.sendForm(
+  'YOUR_SERVICE_ID',      // Replace with your Service ID
+  'YOUR_TEMPLATE_ID',     // Replace with your Template ID
+  e.currentTarget,
+  'YOUR_PUBLIC_KEY'       // Replace with your Public Key
+);
+```
+
+### Template Variable Names
+
+Ensure your form field names match the template variables:
+- `from_name` - Sender's name
+- `from_email` - Sender's email
+- `subject` - Email subject
+- `message` - Email message
+
+> **💡 Pro Tip:** The current implementation uses these exact field names. If you change them, update both the form inputs and EmailJS template!
+
+---
+
+## 🏗️ Project Structure
+
+```
+dineshbarri-portfolio/
+├── public/                    # Static assets
+│   ├── images/               # Project images and logos
+│   └── resume.pdf            # Downloadable resume
+├── src/
+│   ├── components/           # React components
+│   │   ├── About.tsx         # About section
+│   │   ├── Certifications.tsx # Professional certifications
+│   │   ├── Contact.tsx       # Contact form with EmailJS
+│   │   ├── Education.tsx     # Education timeline
+│   │   ├── Experience.tsx    # Work experience
+│   │   ├── Footer.tsx        # Footer component
+│   │   ├── Hero.tsx          # Hero section with typewriter
+│   │   ├── Navbar.tsx        # Navigation bar
+│   │   ├── Projects.tsx      # Project showcase
+│   │   ├── Skills.tsx        # Skills section
+│   │   └── ui/               # Reusable UI components (shadcn)
+│   ├── hooks/                # Custom React hooks
+│   ├── lib/                  # Utility functions
+│   ├── App.tsx               # Main app component
+│   ├── index.css             # Global styles
+│   └── main.tsx              # App entry point
+├── Certifications.csv        # Certification data
+├── index.html                # HTML template
+├── package.json              # Dependencies
+├── tailwind.config.ts        # Tailwind configuration
+├── tsconfig.json             # TypeScript configuration
+└── vite.config.ts            # Vite configuration
+```
+
+---
+
+## 🛠️ Tech Stack
+
+### **Frontend Framework**
+- **React 18.3.1** - Modern UI library with hooks
+- **TypeScript 5.8.3** - Type-safe JavaScript
+- **Vite 5.4.19** - Next-generation frontend tooling
+
+### **Styling & UI**
+- **Tailwind CSS 3.4.17** - Utility-first CSS framework
+- **Framer Motion 12.23.25** - Production-ready animation library
+- **Radix UI** - Unstyled, accessible component primitives
+- **shadcn/ui** - Re-usable component library
+- **Lucide React** - Beautiful & consistent icon set
+
+### **Form Handling**
+- **React Hook Form 7.61.1** - Performant form validation
+- **Zod 3.25.76** - TypeScript-first schema validation
+- **EmailJS 4.4.1** - Email service for contact form
+
+### **Additional Libraries**
+- **React Router DOM 6.30.1** - Client-side routing
+- **TanStack Query 5.83.0** - Powerful data synchronization
+- **date-fns 3.6.0** - Modern date utility library
+- **Recharts 2.15.4** - Composable charting library
+
+---
+
+## 📜 Available Scripts
+
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Build for development (with source maps)
+npm run build:dev
+
+# Preview production build
+npm run preview
+
+# Run ESLint
+npm run lint
+```
+
+---
+
+## 🎯 Key Features Explained
+
+### 1. **Dynamic Typewriter Effect**
+The hero section features a rotating typewriter animation showcasing different roles:
+- Data Analyst
+- Data Scientist
+- ML Enthusiast
+- Codeforces Master
+
+### 2. **Glassmorphism Design**
+Modern glass-card effects with backdrop blur and transparency for a premium look.
+
+### 3. **Smooth Scroll Navigation**
+Click navigation links to smoothly scroll to sections with offset handling.
+
+### 4. **Responsive Certifications**
+Certifications are loaded from `Certifications.csv` with:
+- Credential links
+- Issue dates
+- Learning highlights
+- "View All" feature for 6+ certifications
+
+### 5. **Interactive Project Cards**
+Each project card includes:
+- Live demo links
+- GitHub repository links
+- Technology tags
+- Project descriptions
+- Hover animations
+
+### 6. **Contact Form Validation**
+Real-time form validation with:
+- Required field checks
+- Email format validation
+- Success/error toast notifications
+- Loading states during submission
+
+---
+
+## 🌐 Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Go to [Vercel](https://vercel.com)
+3. Import your repository
+4. Vercel will auto-detect Vite and deploy
+5. Your site will be live in seconds! 🚀
+
+### Deploy to Netlify
+
+1. Build the project: `npm run build`
+2. Drag and drop the `dist` folder to [Netlify Drop](https://app.netlify.com/drop)
+3. Or connect your GitHub repo for continuous deployment
+
+### Deploy to GitHub Pages
+
+```bash
+# Install gh-pages
+npm install --save-dev gh-pages
+
+# Add to package.json scripts
+"predeploy": "npm run build",
+"deploy": "gh-pages -d dist"
+
+# Deploy
+npm run deploy
+```
+
+---
+
+## 📊 Portfolio Projects Showcase
+
+This portfolio highlights various data science and analytics projects:
+
+### 🏨 **Ireland Hotel Analytics**
+- End-to-end data pipeline analyzing Irish hospitality market
+- Technologies: Python, SQL, Tableau, Netlify
+- [Live Demo](https://ireland-hotel-analytics.netlify.app/) | [GitHub](https://github.com/dineshbarri/ireland-hotel-pricing-ratings-analysis)
+
+### 🎥 **AI Video Factory**
+- Automated video creation with Google Veo3 and n8n
+- Technologies: AI, Automation, YouTube API, Google Drive
+- [GitHub](https://github.com/dineshbarri/AI-Video-Factory-Veo3-Automation-Pipeline)
+
+### 🏅 **Olympic Data Analytics Dashboard**
+- 120 years of Olympic history visualization (1896-2016)
+- Technologies: Power BI, Data Visualization
+- [GitHub](https://github.com/dineshbarri/Olympic-Data-Analytics-Dashboard-1896-2016-Power-BI-Insights)
+
+### 🤖 **Plemdo AI Enterprise Analytics**
+- WhatsApp to boardroom report in 60 seconds
+- Technologies: AI, n8n, WhatsApp API, Data Visualization
+- [GitHub](https://github.com/dineshbarri/Plemdo-AI-Enterprise-Analytics)
+
+### 🧙 **Harry Potter Data Analytics**
+- Interactive Tableau dashboard with book sales and trends
+- Technologies: Tableau, EDA, Data Visualization
+- [GitHub](https://github.com/dineshbarri/Wizarding-Analytics-Harry-Potter-Through-Data-)
+
+*...and many more on my [GitHub](https://github.com/dineshbarri?tab=repositories)!*
+
+---
+
+## 📫 Contact
+
+**Dinesh Barri**
+
+- 📧 Email: [dineshbarri1997@gmail.com](mailto:dineshbarri1997@gmail.com)
+- 💼 LinkedIn: [linkedin.com/in/dinesh-barri](https://www.linkedin.com/in/dinesh-barri/)
+- 🐙 GitHub: [github.com/dineshbarri](https://github.com/dineshbarri)
+- 🌐 Portfolio: [dineshbarri.dev](https://dineshbarri.dev)
+- 📱 Phone: +353 89 203 3146
+- 📍 Location: Dublin, Ireland 🇮🇪
+
+---
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📝 License
+
+This project is **MIT** licensed. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙏 Acknowledgments
+
+- **Design Inspiration** - Modern portfolio trends and glassmorphism
+- **Icons** - [Lucide Icons](https://lucide.dev/)
+- **UI Components** - [shadcn/ui](https://ui.shadcn.com/)
+- **Animations** - [Framer Motion](https://www.framer.com/motion/)
+- **Email Service** - [EmailJS](https://www.emailjs.com/)
+- **Hosting** - [Vercel](https://vercel.com/) / [Netlify](https://www.netlify.com/)
+
+---
+
+## ⭐ Show Your Support
+
+If you found this portfolio helpful or inspiring, please consider:
+- ⭐ Starring this repository
+- 🐛 Reporting bugs or suggesting features
+- 📢 Sharing with others who might find it useful
+
+---
+
+<div align="center">
+
+### 💻 Built with passion by [Dinesh Barri](https://github.com/dineshbarri)
+
+**Data Explorer 🚀 | ML Enthusiast | AI Agent Developer | Competitive Programmer | Pro Chess Player**
+
+[![GitHub followers](https://img.shields.io/github/followers/dineshbarri?style=social)](https://github.com/dineshbarri)
+[![LinkedIn](https://img.shields.io/badge/Connect-LinkedIn-blue?style=social&logo=linkedin)](https://www.linkedin.com/in/dinesh-barri/)
+
+---
+
+*Last Updated: December 2025*
+
+</div>
