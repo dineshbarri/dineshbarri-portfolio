@@ -109,9 +109,8 @@ export const Hero = () => {
               View Projects
               <ArrowDown size={18} className="-rotate-90" />
             </a>
-            <a
-              href="/Dinesh_Barri_Resume.pdf"
-              download
+            <a href="/Dinesh_Barri_Google_Resume.pdf"
+              download="Dinesh_Barri_Google_Resume.pdf"
               className="btn-secondary flex items-center gap-2"
             >
               Resume
